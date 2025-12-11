@@ -1,1 +1,58 @@
+# ==================================
+# FIREBASE / NODE.JS (BACKEND)
+# ==================================
+# Node modules: Jangan upload folder dependencies
+/backend/functions/node_modules
+/frontend/public/node_modules
 
+# Firebase CLI Files
+.firebase/
+.firebaserc.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================================
+# ARDUINO / ESP32 (HARDWARE)
+# ==================================
+# File hasil kompilasi yang besar dan tidak perlu
+*.bin
+*.hex
+*.elf
+*.map
+*.lst
+*.suo
+
+# Folder IDE dan Build sementara
+.vscode/
+.vs/
+.pio/
+build/
+.arduino/
+.dtemp/
+
+# ==================================
+# IDE / SYSTEM (VS CODE, MAC, WINDOWS)
+# ==================================
+# VS Code (settings lokal)
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# File Sistem Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# File Sistem macOS
+.DS_Store
+
+# ==================================
+# TEMPORARY / SENSITIVE FILES
+# ==================================
+# File konfigurasi lokal atau rahasia yang tidak boleh di-publish
+*.env
+.env
+.DS_Store
