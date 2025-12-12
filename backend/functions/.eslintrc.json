@@ -1,1 +1,27 @@
-
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020 // Menggunakan fitur ES2020
+  },
+  "rules": {
+    // 1. Aturan wajib untuk Firebase Functions
+    "quotes": ["error", "single"], // Selalu gunakan single quotes
+    "require-jsdoc": "off",       // Matikan kebutuhan JSDoc (Opsional, untuk menghemat waktu)
+    "max-len": ["error", { "code": 100 }], // Maksimal panjang baris 100 karakter
+    "new-cap": "off",             // Matikan aturan new-cap (Berguna jika menggunakan class/constructor)
+    
+    // 2. Aturan tambahan (disarankan untuk Node/ES6)
+    "no-unused-vars": ["error", { "argsIgnorePattern": "req|res|next" }],
+    "indent": ["error", 2], // Wajib menggunakan indentasi 2 spasi
+    "object-curly-spacing": ["error", "always"], // Wajib spasi di dalam kurung kurawal objek
+    "comma-dangle": ["error", "never"] // Jangan gunakan trailing comma (kompatibilitas)
+  }
+}
